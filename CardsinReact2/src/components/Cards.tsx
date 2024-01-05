@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 
 function Cards() {
   return (
-    <Card style={{ width: '50rem', backgroundColor:'white', borderRadius:'2rem'}}>
+    <Card style={{ width: '50rem',height:'50rem', backgroundColor:'white', borderRadius:'2rem'}}>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
@@ -14,6 +14,7 @@ function Cards() {
         <Card.Link href="#">Another Link</Card.Link>
       </Card.Body>
     </Card>
+    
   );
 }
 

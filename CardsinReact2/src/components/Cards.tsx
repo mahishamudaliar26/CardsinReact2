@@ -1,4 +1,7 @@
 import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+import { Form, InputGroup, FormControl, Button } from 'react-bootstrap';
+import { FaSearch } from 'react-icons/fa';
 
 function Cards() {
   return (
@@ -13,7 +16,28 @@ function Cards() {
         <Card.Link href="#">Card Link</Card.Link>
         <Card.Link href="#">Another Link</Card.Link>
       </Card.Body>
+      <ListGroup variant="flush">
+        <ListGroup.Item>Cras justo odio</ListGroup.Item>
+        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+      </ListGroup>
+      <Form>
+      <InputGroup className="mb-3">
+        <FormControl
+          placeholder="Search Here..."
+          aria-label="Search Here"
+          aria-describedby="basic-addon2"
+         
+        />
+        <InputGroup>
+          {/* <Button variant="outline-secondary"> */}
+            <FaSearch />
+          {/* </Button> */}
+        </InputGroup>
+      </InputGroup>
+    </Form>
     </Card>
+    
     
   );
 }

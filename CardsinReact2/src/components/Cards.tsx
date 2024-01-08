@@ -2,6 +2,7 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Form, InputGroup, FormControl, Button } from 'react-bootstrap';
 import { FaSearch } from 'react-icons/fa';
+import { MDBCol, MDBIcon } from "mdbreact";
 
 function Cards() {
   return (
@@ -21,6 +22,12 @@ function Cards() {
         <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
         <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
       </ListGroup>
+      <MDBCol md="6">
+      <form className="form-inline mt-4 mb-4">
+        <MDBIcon icon="search" />
+        <input className="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search" />
+      </form>
+    </MDBCol>
       <Form>
       <InputGroup className="mb-3">
         <FormControl

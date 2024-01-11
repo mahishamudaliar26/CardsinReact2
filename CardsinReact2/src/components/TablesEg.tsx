@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid } from "gridjs-react";
 import { useState, useEffect } from 'react';
 import { Card , Row, Col} from 'react-bootstrap';
+import { Data } from './data';
 
 
 function TablesEg() {
@@ -24,37 +25,7 @@ function TablesEg() {
         PermissionName: string;
         CreatedDate: Date;
     }
-    const columns: any[] = [
-        // { name: 'SNo', selector: (row: columnNames) => row.SNo, sortable: true, sortField: 'SNo', center: true },
-        {
-            name: 'NAME',
-            selector: (row: columnNames) => row.PermissionName,
-            sortable: true,
-            sortField: 'PermissionName',
-            // center: true
-        },
-        {
-            name: 'ASSIGNED TO',
-            // selector: (row: columnNames) => row.CreatedDate,
-            // sortable: true,
-            sortField: 'CreatedDate',
-            // center: true
-        },
-        {
-            name: 'CREATED DATE',
-            selector: (row: columnNames) => row.CreatedDate,
-            sortable: true,
-            sortField: 'CreatedDate',
-            // center: true
-        },
-        {
-            name: 'ACTIONS',
-            width: '190px',
-            button: true,
-            center: true,
-            
-        }
-    ];
+   
   return (
     <>
     <div>TablesEg</div>
@@ -70,8 +41,8 @@ function TablesEg() {
                         <Card.Body>
                             <div id="grid-example1">
                                 <Grid
-                                    data={getData}
-                                    columns={['NAME', 'ASSIGNED TO', 'CREATED DATE', 'ACTIONS']} />
+                                    data={Data}
+                                    columns={['Date', 'Name', 'EMail', 'Id', 'Price', 'Quantity', 'Total']} />
                             </div>
                         </Card.Body>
                     </Card>
